@@ -1,0 +1,105 @@
+body {background-image: url("images/background.jpg");}
+.title-container {color: aliceblue;}
+p:hover{cursor: default;}
+a:link{color: aliceblue;}
+
+html,body{
+     height:100%;
+     padding:0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-container {
+    background-color: rgba(215, 234, 236, 0.151);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 400px;
+    height: 280px;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.score {color: rgba(255, 255, 255, 0.884);}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice, .player-choice {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    background-color: rgba(219, 226, 222, 0.849);
+    margin: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.winnerlogo {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#player-wins, #robot-wins {display: none;}
+
+.player-choice:hover {
+    background-color: lightgrey;
+    box-shadow: 3px 3px 1px;
+    border-bottom: 2px solid;
+    transform: translate(2%, -2%);
+    cursor: pointer;
+}
+
+.player-choice:active {
+    transform: translate(3px, 4px);
+}
+
+.result-container {
+    display: none;
+    text-align: center;
+}
+
+.result-container p {color: aliceblue; margin-top: 50px;}
+
+#restart-button {
+    display: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: 400px;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 4px 5px 0px;
+    border-bottom: 2px solid;
+    border-right: 1px solid;
+    margin-top: 100px;
+}
+
+#restart-button:link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 4px 5px 0px black;
+}
